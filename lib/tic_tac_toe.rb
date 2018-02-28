@@ -40,12 +40,17 @@ class TicTacToe
     !position_taken?(index) && index.between?(0,8)
   end
   
+  def turn_count
+    @board.count 
+  
   def turn
     player_1_or_2 = current_player() == "X" ? "1" : "2"
     puts "It is player #{player_1_or_2}'s turn."
     puts "Which position do you want to go?"
     position = gets.strip
-    index = input_to_index()
+    index = input_to_index(position)
+    if valid_move(index)
+      move(index, tic_or_tac)
     
     
     
