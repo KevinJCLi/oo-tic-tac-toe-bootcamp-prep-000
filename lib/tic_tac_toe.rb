@@ -49,8 +49,8 @@ class TicTacToe
   end
   
   def turn
-    player_1_or_2 = current_player() == "X" ? "1" : "2"
-    puts "It is player #{player_1_or_2}'s turn."
+    #player_1_or_2 = current_player() == "X" ? "1" : "2"
+    #puts "It is player #{player_1_or_2}'s turn."
     puts "Which position do you want to go?"
     position = gets.strip
     index = input_to_index(position)
