@@ -65,7 +65,20 @@ class TicTacToe
   end
   
   def won?
-    WIN_COMBINATIONS.each do |combination_position|
+  	WIN_COMBINATIONS.each do |combination|
+  		combination_array = []
+  		combination.each do |position|
+  			combination_array << board[position]
+  		end
+  		if combination_array == ["X", "X", "X"] || combination_array == ["O", "O", "O"]
+  			return combination
+  		end
+  	end
+  	return false
+  end
+  
+  def full?
+    @board.
       
       
       
