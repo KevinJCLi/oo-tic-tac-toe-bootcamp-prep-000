@@ -45,6 +45,7 @@ class TicTacToe
     puts "It is player #{player_1_or_2}'s turn."
     puts "Which position do you want to go?"
     position = gets.strip
+    index = input_to_index()
     
     
     
