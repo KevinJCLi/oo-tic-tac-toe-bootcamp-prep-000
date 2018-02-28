@@ -45,7 +45,8 @@ class TicTacToe
   end
   
   def current_player
-    turn_count %
+    turn_count() % 2 == 0 ? "X" : "O"
+  end
   
   def turn
     player_1_or_2 = current_player() == "X" ? "1" : "2"
@@ -54,7 +55,10 @@ class TicTacToe
     position = gets.strip
     index = input_to_index(position)
     if valid_move(index)
+      tic_or_tac = current_player()
       move(index, tic_or_tac)
+      display_board()
+      
     
     
     
