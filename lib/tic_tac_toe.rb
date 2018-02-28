@@ -78,7 +78,7 @@ class TicTacToe
   end
   
   def full?
-    @board.
+    @board.all? { |tic_or_tac| tic_or_tac == "X" || tic_or_tac == "O"
       
       
       
