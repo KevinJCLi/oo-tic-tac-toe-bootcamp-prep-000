@@ -17,4 +17,4 @@ class TicTacToe
   LINE = "-----------"
   
   def display_board
-  
+    puts "#{@board"
