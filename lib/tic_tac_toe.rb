@@ -41,7 +41,11 @@ class TicTacToe
   end
   
   def turn_count
-    @board.count 
+    @board.count { |tic_or_tac| tic_or_tac == "X" || tic_or_tac == "O" }
+  end
+  
+  def current_player
+    turn_count() 
   
   def turn
     player_1_or_2 = current_player() == "X" ? "1" : "2"
