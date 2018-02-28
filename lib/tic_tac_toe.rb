@@ -68,7 +68,7 @@ class TicTacToe
   	WIN_COMBINATIONS.each do |combination_position|
   		combination_tic_or_tac = []
   		combination_position.each do |position|
-  			combination_tic_or_tac << board[position]
+  			combination_tic_or_tac << @board[position]
   		end
   		if combination_tic_or_tac == ["X", "X", "X"] || combination_tic_or_tac == ["O", "O", "O"]
   			return combination_position
