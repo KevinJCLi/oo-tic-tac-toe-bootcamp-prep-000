@@ -58,6 +58,16 @@ class TicTacToe
       tic_or_tac = current_player()
       move(index, tic_or_tac)
       display_board()
+    else 
+      puts "That is an invalid position, please try again."
+      turn()
+    end
+  end
+  
+  def won?
+    WIN_COMBINATIONS.each do |combination|
+      
+      
       
     
     
