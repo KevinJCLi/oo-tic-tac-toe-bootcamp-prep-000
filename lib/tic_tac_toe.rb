@@ -54,7 +54,7 @@ class TicTacToe
     puts "Which position do you want to go?"
     position = gets.strip
     index = input_to_index(position)
-    if valid_move(index)
+    if valid_move?(index)
       tic_or_tac = current_player()
       move(index, tic_or_tac)
       display_board()
