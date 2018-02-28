@@ -37,7 +37,18 @@ class TicTacToe
   end
   
   def valid_move?(index)
-    !position_taken?(index) && index. 
+    !position_taken?(index) && index.between?(0,8)
+  end
+  
+  def turn
+    player_1_or_2 = current_player() == "X" ? "1" : "2"
+    puts "It is player #{player_1_or_2}'s turn."
+    puts "Which position do you want to go?"
+    position = gets.strip
+    
+    
+    
+    
   
   
   
