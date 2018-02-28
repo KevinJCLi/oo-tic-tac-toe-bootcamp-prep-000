@@ -90,7 +90,7 @@ class TicTacToe
   end
   
   def winner
-    @board[won?()[0]]
+    won?() ? @board[won?()[0]] : nil
   end
   
   def play
@@ -99,9 +99,9 @@ class TicTacToe
     end
     
     if won?() 
-      puts "Congratulations, #{winner()} has won the game!"
+      puts "Congratulations #{winner()}!"
     elsif draw?
-      puts "The game was a draw"
+      puts "Cat's Game!"
     end
   end
 end
